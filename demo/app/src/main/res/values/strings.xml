@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fade_Out</string>
+    <string name="photo_copyright_road">https://www.vecteezy.com/free-photos/road</string>
+    <string name="photo_copyright_travel">https://www.vecteezy.com/free-photos/travel</string>
+    <string name="photo_copyright_city">https://www.vecteezy.com/free-photos/city</string>
+    <string name="photo_copyright_dog">https://www.vecteezy.com/free-photos/dog</string>
+    <string name="photo_copyright_rocket">https://www.vecteezy.com/free-photos/rocket</string>
+    <string name="photo_copyright_food">https://www.vecteezy.com/free-photos/food</string>
+</resources>
