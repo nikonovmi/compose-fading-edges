@@ -52,7 +52,7 @@ import org.intellij.lang.annotations.Language
  */
 @Language(value = "AGSL")
 private val bottomFadingEdgeShader = """
-    const half4 BLACK_COLOR = vec4(0, 0, 0, 1);
+    const half4 BLACK_COLOR = half4(0, 0, 0, 1);
     uniform float2 resolution;
     uniform float bottomFade;
 
@@ -66,14 +66,14 @@ private val bottomFadingEdgeShader = """
             float x = ((resolution.y - coord.y) / bottomFade); // x is 0 at the BOTTOM
             float y = (1.0 - x) * (1.0 - x) * (1.0 - x) + 3.0 * (1.0 - x) * (1.0 - x) * x;
             float alpha = 1.0 - y * y; 
-            return vec4(0, 0, 0, alpha); // return black color with the calculated alpha
+            return half4(0, 0, 0, alpha); // return black color with the calculated alpha
         }
     }
 """
 
 @Language(value = "AGSL")
 private val topFadingEdgeShader = """
-    const half4 BLACK_COLOR = vec4(0, 0, 0, 1);
+    const half4 BLACK_COLOR = half4(0, 0, 0, 1);
     uniform float2 resolution;
     uniform float topFade;
 
@@ -87,7 +87,7 @@ private val topFadingEdgeShader = """
             float x = coord.y / topFade; // x is 0 at the TOP
             float y = (1.0 - x)*(1.0 - x)*(1.0 - x) + 3.0 * (1.0 - x) * (1.0 - x) * x;
             float alpha = 1.0 - y * y; 
-            return vec4(0, 0, 0, alpha); // return black color with the calculated alpha
+            return half4(0, 0, 0, alpha); // return black color with the calculated alpha
         }
     }
 """
