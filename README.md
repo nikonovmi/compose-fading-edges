@@ -3,7 +3,7 @@ The smoothest, most seamless Compose fading edges for Column/LazyColumn.
 
 Below, you can see a side-by-side comparison of a standard Compose fading edge implemented with a linear gradient (on the left) and a nonlinear gradient (on the right) implemented in this repository.
 
-![bottom_fade_side_to_side_2](https://github.com/nikonovmi/compose-fading-edges/assets/9309651/4fab6a14-b532-4c68-b42d-2c8afadd8a21)
+![fading_edge_side_by_side](https://github.com/nikonovmi/compose-fading-edges/assets/9309651/87cbacd9-c8b6-4c55-a98e-38cef60dc1d9)
 
-You can also see the difference in the following gifs:
-![linear](https://github.com/nikonovmi/compose-fading-edges/assets/9309651/4702d215-c92c-483c-b1fc-3b0ddd805e8f) ![nonlinear_gif](https://github.com/nikonovmi/compose-fading-edges/assets/9309651/727c1c1b-dd95-46a0-87d2-1565cd8055b4)
+# how to use
+Simply copy and paste [this modifier](https://gist.github.com/nikonovmi/11f983f64a915d29ceaa2dbdc3d6af59) into your project.
