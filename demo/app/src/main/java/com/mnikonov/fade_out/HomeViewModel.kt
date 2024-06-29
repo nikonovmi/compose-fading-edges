@@ -14,12 +14,12 @@ class HomeViewModel : ViewModel() {
         _state.value = HomeViewState(
             items = listOf(
                 HomeItem(
-                    itemImageRes = R.drawable.vecteezy_city,
-                    itemCopyrightRes = R.string.photo_copyright_city,
-                ),
-                HomeItem(
                     itemImageRes = R.drawable.vecteezy_dog,
                     itemCopyrightRes = R.string.photo_copyright_dog,
+                ),
+                HomeItem(
+                    itemImageRes = R.drawable.vecteezy_city,
+                    itemCopyrightRes = R.string.photo_copyright_city,
                 ),
                 HomeItem(
                     itemImageRes = R.drawable.vecteezy_food,

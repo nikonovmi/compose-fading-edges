@@ -92,19 +92,19 @@ private val topFadingEdgeShader = """
     }
 """
 
-fun Modifier.fadingEdgesV2(
+fun Modifier.fadingEdges(
     scrollableState: ScrollableState,
-    topEdgeHeight: Dp = 18.dp,
-    bottomEdgeHeight: Dp = 18.dp,
+    topEdgeHeight: Dp = 22.dp,
+    bottomEdgeHeight: Dp = 22.dp,
 ) = composed {
     val animatedTopEdgeHeight = animateDpAsState(
         targetValue = if (scrollableState.canScrollBackward) topEdgeHeight else 0.dp,
-        animationSpec = tween(300),
+        animationSpec = tween(360),
         label = "TopFadeDpAnimation"
     )
     val animatedBottomEdgeHeight = animateDpAsState(
         targetValue = if (scrollableState.canScrollForward) bottomEdgeHeight else 0.dp,
-        animationSpec = tween(300),
+        animationSpec = tween(360),
         label = "BottomFadeDpAnimation"
     )
     if (Build.VERSION.SDK_INT >= 33) {

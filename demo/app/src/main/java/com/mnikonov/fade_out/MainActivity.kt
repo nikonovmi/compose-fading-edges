@@ -41,7 +41,15 @@ class MainActivity : ComponentActivity() {
             Fade_OutTheme(
                 darkTheme = true,
             ) {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                ) { innerPadding ->
+                    AsyncImage(
+                        modifier = Modifier.fillMaxSize(),
+                        model = R.drawable.vecteezy_background,
+                        contentDescription = null,
+                        contentScale = ContentScale.FillBounds,
+                    )
                     HomeScreen(
                         modifier = Modifier.padding(innerPadding),
                     )
@@ -70,8 +78,8 @@ fun HomeScreenContent(
     val scrollableState = rememberLazyListState()
     LazyColumn(
         modifier = modifier
-            .padding(horizontal = 12.dp)
-            .fadingEdgesV2(scrollableState),
+            .padding(horizontal = 12.dp, vertical = 8.dp)
+            .fadingEdges(scrollableState),
         state = scrollableState,
     ) {
         items(viewState.items) {
