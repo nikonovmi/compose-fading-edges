@@ -1,5 +1,5 @@
 # compose-fading-edges
-The smoothest, most seamless Compose fading edges for Column/LazyColumn.
+The smoothest, most seamless Compose fading edges for Column/LazyColumn. Check out [this Medium article](https://medium.com/@nikonof.m.i/truly-beautiful-fading-edges-in-jetpack-compose-4b6753573d50).
 
 Below, you can see a side-by-side comparison of a standard Compose fading edge implemented with a linear gradient (on the left) and a nonlinear gradient (on the right) implemented in this repository.
 
